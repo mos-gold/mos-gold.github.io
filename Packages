@@ -12,8 +12,8 @@ Filename: ./debs/tqm-mos.iconrepo_1.3_iphoneos-arm.deb
 Size: 133908
 MD5sum: ebec247866342530af1ab2bb837ab390
 
-Package: com.tqm-mos.anemoneinstaller
-Name: Anemone 3.0 (ios12)
+Package: anemone3
+Name: Anemone 3.0 (Uncover)
 Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Quản lí chủ đề ,rất nên có cho máy đã jailbreak
@@ -25,6 +25,6 @@ Pre-Depends: curl, jailbreak-resources (>= 0.7), ldid, firmware(>=12.0)
 Maintainer: QM
 Author: Jake James <jakeashacks@gmail.com>
 Section: IOS12
-Filename: ./debs/com.tqm-mos.anemoneinstaller_1.0.1_iphoneos-arm.deb
-Size: 11312342
-MD5sum: 188ebbb7450f6457d5316844de355ab5
+Filename: ./debs/sileoturkiye.anemoneinstaller_1.0.1_iphoneos-arm.deb
+Size: 11312322
+MD5sum: 48ea1bf9ca981de754058ab27270924b
