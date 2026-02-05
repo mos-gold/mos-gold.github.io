@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <title>iPA Sign - Công cụ ký iPA online không cần macOS</title>
+    <meta name="Keywords" content="ký ipa, ký ipa online, ký ipa trực tuyến, sign ipa, sign ipa online, sign ipa trực tuyến"/>
+    <meta name="description" content="Công cụ ký ipa online không cần macOS, không cần jailbreak"/>
+    <meta property="og:title" content="iPA Sign - Công cụ ký iPA online không cần macOS" />
+    <meta property="og:description" content="Công cụ ký ipa online không cần macOS, không cần jailbreak" />
+    <meta property="og:image" content="https://sign.codevn.net/og.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcYo6AUAAAAAFjddWYMFHT4jG4bpH05zZWyNOKq"></script>
+    <script src="bootstrap.js" async defer></script>
+    <style type="text/css">
+        input[type=checkbox], input[type=radio] {
+            box-sizing: border-box;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+        }
+        label.form-control {
+            cursor: pointer;
+        }
+        .hidden {
+          display: none;
+        }
+        .form-check-input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            margin-right: 5px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        label.form-label {
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0;
+            padding-left: 5px;
+            cursor: pointer;
+        }
+        span#file-status, label.custom-file-label {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .disabled{pointer-events:none}.hidden{display:none}.logo{max-width: 150px;height:auto;}body{font-size:18px;}.nav a:hover{color: #fff !important;background-color: #6c757d;border-radius: 0.25rem!important;text-decoration: none;}
+        label.form-control {
+            margin-bottom: 0px !important;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcYo6AUAAAAAFjddWYMFHT4jG4bpH05zZWyNOKq"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LcYo6AUAAAAAFjddWYMFHT4jG4bpH05zZWyNOKq', {action: 'submit'}).then(function(token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
+    <script>
+        var jsonConfig = {"max_upload_size_name":"2048M","max_upload_size":2147483648}    </script> 
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img class="logo" src="https://sign.codevn.net/logo-white.svg"></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 badge-secondary rounded" href="https://sign.codevn.net">Sign iPA</a>
+                <a class="p-2 text-white" href="https://ipatool.codevn.net">ipatool-web</a>
+                <a class="p-2 text-white" href="https://ipatool.codevn.net/historyver.html">Historyver</a>
+                <a class="p-2 text-white" href="https://ipatool.codevn.net/ipa-parser/">IPA Parser</a>
+                <a class="p-2 text-white" href="https://ipatool.codevn.net/deb-to-ipa/">Deb to IPA</a>
+                <a class="p-2 text-white" href="https://bundleid.codevn.net">Bundle ID</a>
+                <a class="p-2 text-white" href="https://i.codevn.net">iCodeVN</a>
+                <a class="p-2 text-white" href="https://ipatool.codevn.net/inject-dylib/">Inject Dylib</a>
+            </nav>
+        </div>
+
+
+        <div class="jumbotron p-4 p-md-4 text-dark rounded">
+            <div class="col-md-12 px-0">
+                <h1 class="h4">Sign CodeVN - Công cụ ký iPA online</h1>
+                <p>Nhập đầy đủ thông tin yêu cầu và bấm <span class="badge badge-secondary"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="signature" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="height: 20px;">
+                                <path fill="currentColor" d="M623.2 192c-51.8 3.5-125.7 54.7-163.1 71.5-29.1 13.1-54.2 24.4-76.1 24.4-22.6 0-26-16.2-21.3-51.9 1.1-8 11.7-79.2-42.7-76.1-25.1 1.5-64.3 24.8-169.5 126L192 182.2c30.4-75.9-53.2-151.5-129.7-102.8L7.4 116.3C0 121-2.2 130.9 2.5 138.4l17.2 27c4.7 7.5 14.6 9.7 22.1 4.9l58-38.9c18.4-11.7 40.7 7.2 32.7 27.1L34.3 404.1C27.5 421 37 448 64 448c8.3 0 16.5-3.2 22.6-9.4 42.2-42.2 154.7-150.7 211.2-195.8-2.2 28.5-2.1 58.9 20.6 83.8 15.3 16.8 37.3 25.3 65.5 25.3 35.6 0 68-14.6 102.3-30 33-14.8 99-62.6 138.4-65.8 8.5-.7 15.2-7.3 15.2-15.8v-32.1c.2-9.1-7.5-16.8-16.6-16.2z"></path>
+                            </svg> Sign</span>:</p>
+                <ul>
+                    <li>File iPA đúng định dạng, không có ký tự đặc biệt (dung lượng tối đa 2048M).</li>
+                    <li>Nếu chọn ESign, Feather, GBox hoặc Scarlet: không cần upload file .ipa mà hệ thống tự động lấy file .ipa có sẵn.</li>
+                    <li>File p12 và mật khẩu.</li>
+                    <li>File mobileprovision.</li>
+                </ul>
+                <p>Truy cập website <a target="_blank" href="https://bundleid.codevn.net/">bundleid.codevn.net</a> để tìm bundle id của ứng dụng/trò chơi.</p>
+                <p>File iPA sau khi ký sẽ tồn tại 30 phút trước khi bị xóa vì dung lượng lưu trữ có giới hạn.</p>
+                <p>Tham gia nhóm telegram: <span class="badge badge-secondary"> <a href="https://t.me/+1qK9KUZlfGs3ZDg1" style="color:white;">https://t.me/+1qK9KUZlfGs3ZDg1</a> </span></p>
+                <p>Nếu bạn ký iPA bị báo lỗi, hãy tham gia nhóm telegram và gửi file iPA đó cho chúng tôi.</p>
+            </div>
+        </div>
+
+
+                <div class="mb-4 banner ads" style="text-align: center;">
+            <a target="_blank" href="https://udid.app/pricing/"><img style="margin: 0 auto;text-align:center;overflow: hidden;max-width: 100%" src="https://sign.codevn.net/banner.png" alt="banner ads"></a>
+        </div>
+        
+        <div class="card-body jumbotron" id="step1">
+            <h4 class="card-title text-center pb-3">Thành công: 590953 | Hôm nay: 363</h4>
+            <form id="testForm" action="/sign.php" method="post" enctype="multipart/form-data" class="was-validated">
+                <div class="row mb-3">
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sellect" id="uploadipa" value="uploadipa" checked="">
+                            <label class="form-label" for="uploadipa">Upload .ipa</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sellect" id="ESign" value="ESign">
+                            <label class="form-label" for="ESign">ESign</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sellect" id="Feather" value="Feather">
+                            <label class="form-label" for="Feather">Feather</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sellect" id="GBox" value="GBox">
+                            <label class="form-label" for="GBox">GBox</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sellect" id="Scarlet" value="Scarlet">
+                            <label class="form-label" for="Scarlet">Scarlet</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <div class="custom-file">
+                            <input type="file" required="required" accept=".ipa" aria-required="true" name="ipa" id="ipa" class="custom-file-input is-invalid" style="z-index: -5;" />
+                            <label data-browse="Chọn" for="ipa" class="custom-file-label"><span id="file-status" class="d-block form-file-text" style="pointer-events: none;">Chọn file .ipa</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                $(document).ready(function() {
+                    $('input[name="sellect"]').change(function() {
+                        if ($(this).val() === 'uploadipa') {
+                            $('#ipa').prop('disabled', false).removeClass('is-valid').addClass('is-invalid');
+                        } else {
+                            $('#ipa').prop('disabled', true).removeClass('is-invalid').addClass('is-valid');
+                        }
+                        if ($(this).val() === 'ESign') {
+                            $('#file-status').text('Đã chọn ESign v5.0.2 | p3.xyz.yyyue.esign');
+                        } else if ($(this).val() === 'Feather') {
+                            $('#file-status').text('Đã chọn Feather v2.6.0 | thewonderofyou.Feather');
+                        } else if ($(this).val() === 'GBox') {
+                            $('#file-status').text('Đã chọn GBox v5.7.3 | com.ncs.gbox');
+                        } else if ($(this).val() === 'Scarlet') {
+                            $('#file-status').text('Đã chọn Scarlet v1.0 | com.DebianArch.ScarletPersonalXYZZZZ');
+                        }
+                         else {
+                            $('#file-status').text('Chọn file .ipa');
+                        }
+                    });
+                });
+                </script>
+
+
+                <div id="error" class="alert alert-danger py-3" role="alert" style="display:none"></div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <div class="custom-file b-form-file is-invalid is-invalid">
+                            <input type="file" required="required" accept=".p12" aria-required="true" name="p12" id="p12" class="custom-file-input is-invalid" style="z-index: -5;" />
+                            <label data-browse="Chọn" for="p12" class="custom-file-label"><span class="d-block form-file-text" style="pointer-events: none;">Chọn file .p12</span></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-3"><input type="text" placeholder="Nhập mật khẩu .p12" name="password" required="required" aria-required="true" aria-invalid="true" id="password" class="form-control is-invalid" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <div class="custom-file b-form-file is-invalid">
+                            <input type="file" required="required" accept=".mobileprovision" name="mobileprovision" aria-required="true" id="mobileprovision" class="custom-file-input is-invalid" style="z-index: -5;" />
+                            <label data-browse="Chọn" for="mobileprovision" class="custom-file-label"><span class="d-block form-file-text" style="pointer-events: none;">Chọn file .mobileprovision</span></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <label class="form-control">
+                            <span>Xóa embedded.mobileprovision</span> 
+                            <div style="display: inline-block; float: right;">
+                                <input type="checkbox" name="options[]" value="remove_embedded">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3"><input type="text" placeholder="Nhập bundle identifier mới (không bắt buộc)" name="identifier" id="identifier" class="form-control" /></div>
+                    <div class="col-sm-6 mb-3"><input type="text" placeholder="Nhập bundle name mới (không bắt buộc)" name="name" id="name" class="form-control" /></div>
+                </div>
+                                <input type="hidden" name="csrf_token" value="63b54d82220ad0e3b19f3e9027373dbd0a31a68bf1e8afd1a3703231b9f5013d">
+                                
+                <button id="uploadButton" class="btn btn-info btn-block btn_upload">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="signature" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="height: 20px;">
+                        <path
+                            fill="currentColor"
+                            d="M623.2 192c-51.8 3.5-125.7 54.7-163.1 71.5-29.1 13.1-54.2 24.4-76.1 24.4-22.6 0-26-16.2-21.3-51.9 1.1-8 11.7-79.2-42.7-76.1-25.1 1.5-64.3 24.8-169.5 126L192 182.2c30.4-75.9-53.2-151.5-129.7-102.8L7.4 116.3C0 121-2.2 130.9 2.5 138.4l17.2 27c4.7 7.5 14.6 9.7 22.1 4.9l58-38.9c18.4-11.7 40.7 7.2 32.7 27.1L34.3 404.1C27.5 421 37 448 64 448c8.3 0 16.5-3.2 22.6-9.4 42.2-42.2 154.7-150.7 211.2-195.8-2.2 28.5-2.1 58.9 20.6 83.8 15.3 16.8 37.3 25.3 65.5 25.3 35.6 0 68-14.6 102.3-30 33-14.8 99-62.6 138.4-65.8 8.5-.7 15.2-7.3 15.2-15.8v-32.1c.2-9.1-7.5-16.8-16.6-16.2z"
+                        ></path>
+                    </svg>
+                    Sign
+                </button>
+                <input type="hidden" id="recaptchaResponse" name="recaptcha_response">
+            </form>
+            <br>
+            <div id="error" class="alert alert-danger" role="alert" style="display:none"></div>
+            <div id="progressBar" class="progress" style="display:none">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
+            </div>
+            <div id="status" style="display:none"></div>
+        </div>
+
+
+        <!-- Modal Bootstrap 5 -->
+        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">Thông báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p id="modalMessage">Vui lòng chỉ chọn file có định dạng .ipa</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="jquery.form.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
